@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=0, minimal-ui">
+    <meta name="Apple-mobile-web-app-capable" content="yes"/>
+    <title>Document</title>
+    <style>
+        video:-webkit-full-screen::-webkit-media-controls-panel, video:-webkit-full-screen::-webkit-media-controls, video:-webkit-full-screen::-webkit-media-text-track-container {
+            display: none !important;
+            opacity: 0;
+        }
+        #video-ne {
+            display: none;
+            opacity: 0;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        video::-webkit-media-controls-panel {
+            display: none !important;
+            opacity: 1 !important;
+        }
+    </style>
+</head>
+<body>
+    <div id="fullscreen">
+        <video id="video-ne" controls src="foo.mp4">
+        </video>
+        <video id="my-video" controls src="foo.mp4" style="width: 100vw;height: 100vh;" autoplay>
+        </video>
+    </div>
+    <button onclick="fullscreenDi()" style="position: fixed;bottom: 0;right: 0;">fullscreen</button>
+    <script>
+        function fullscreenDi() {
+            console.log('trung hieu');
+            var i = document.querySelector('#video-ne')
+            if (i.requestFullscreen) {
+                i.requestFullscreen();
+            } else if (i.webkitRequestFullscreen) {
+                i.webkitRequestFullscreen();
+            } else if (i.mozRequestFullScreen) {
+                i.mozRequestFullScreen();
+            } else if (i.msRequestFullscreen) {
+                i.msRequestFullscreen();
+            }
+            var myVideo = document.querySelector('#my-video')
+            myVideo.style.transform = 'rotateY(180deg)'
+       }
+    </script>
+</body>
+</html>
