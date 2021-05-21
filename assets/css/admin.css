@@ -1,0 +1,349 @@
+.video-area.share .mic {
+    display: block;
+}
+.video-areas {
+    align-items: unset;
+}
+.video-area.share .mic {
+    top: 30px;
+    left: 32px;
+}
+#footer nav {
+    transform: translate(-20%, 0);
+}
+#admin #footer nav ul li {
+    color: #fff;
+}
+#footer nav ul li i {
+    margin-bottom: 5px;
+    font-size: 32px;
+}
+[data-pin] .video-area:nth-child(n + 2) .mic {
+    -webkit-transform: none; 
+    -webkit-transform-origin: none;
+    transform: none;
+    transform-origin: none;
+}
+.video-area.share .hover {
+    display: block;
+    height: 29px;
+    width: 159px;
+    left: 32px;
+    bottom: 24px;
+    padding-top: 6.5px;
+}
+.video-area.share .hover .ico-pin {
+    display: none;
+}
+#admin #footer,
+#admin #header{
+    background: #fff;
+    padding: 7.5px 0;
+    padding-left: 13px;
+    height: 70px;
+}
+#admin #footer{
+    height: 89px;
+    background: #103034;
+}
+#admin #main {
+    top: 70px;
+}
+#admin #main {
+    background: #FFE8EA;
+}
+#admin #main .video-area.share {
+    grid-column-end: 1;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: 100%;
+    height: 100%;
+    padding: 0 0 10px 10px;
+    align-items: flex-end;
+    justify-content: left;
+    margin: 0;
+    background: #FFE8EA;
+    border-radius: unset;
+}
+#admin #main .video-area.share .video {
+    top: 21px;
+    left: 20px;
+    bottom: 23px;
+    right: calc(40% - 20px);
+    border-radius: 12px;
+    overflow: hidden;
+}
+#admin .logo{
+    background: url(../img/lg_cocacola.png);
+    image-rendering:pixelated;
+    background-size: 99px 50px;
+    width: 99px;
+    height: 50px;
+    margin: 0;
+}
+#admin .header-right{
+    display: none;
+}
+#admin .video-areas {
+    grid-template-columns: 1fr 24vw;
+    grid-template-rows: 1fr 34.5vh;
+    padding: 0 0 0 0;
+}
+#admin .img-footer {
+    display: none;
+}
+#admin .video-right {
+    display: flex;
+    padding-right: 21px;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    width: 100%;
+    height: 100%;
+    background-color: #E4ACB3;
+    /* overflow: hidden; */
+}
+#admin .video-area-scroll {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 14px;
+    width: 100%;
+    overflow: auto;
+    padding: 0 0 0 0;
+}
+#admin .video-area-scroll::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+    background-color: #F5F5F5;
+    overflow: hidden;
+}
+
+#admin .video-area-scroll::-webkit-scrollbar
+{
+	width: 0;
+}
+#admin .video-area-scroll .video-area {
+    margin: auto;
+    width: calc(19.4% - 8px);
+    height: 46.4%;
+    margin-bottom: 16px;
+    margin-top: 0;
+}
+#admin .video-area-scroll .video-area{
+    background: black;
+}
+/* #admin .video-area-scroll .video-area .video{
+    display: none;
+} */
+
+#admin .video-area-scroll {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#admin .chat-areas {
+    border-radius: 15px 15px 0 0;
+    top: 91px;
+    right: 12px;
+    bottom: 90px;
+    width: calc(24vw - 13px);
+}
+.chat-areas .submit-area {
+    background: #F1F1F1;
+    border: none;
+}
+
+#admin .chat-areas .chat-scroll {
+    top: 15px;
+}
+
+#admin .chat-scroll::-webkit-scrollbar-track
+{
+    background-color: transparent;
+    overflow: hidden;
+}
+
+#admin .chat-scroll::-webkit-scrollbar
+{
+	width: 6px;
+    background-color: transparent;
+}
+
+#admin .chat-scroll::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+    background-color: #97A0A2;
+    
+}
+#videos-play {
+    position: absolute;
+    left: calc(60% + 46px);
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+    right: 26px;
+    top: 21px;
+    bottom: 23px;
+}
+.ads-video-scroll {
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    top: 17px;
+    bottom: 19px;
+    overflow: auto;
+}
+#admin .ads-video-scroll::-webkit-scrollbar-track
+{
+    background-color: transparent;
+    overflow: hidden;
+}
+
+#admin .ads-video-scroll::-webkit-scrollbar
+{
+	width: 6px;
+    background-color: transparent;
+}
+
+#admin .ads-video-scroll::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+    background-color: #97A0A2;
+    
+}
+.ads-video-scroll .ads-video {
+    height: 31.5%;
+    width: 100%;
+    border-bottom: 1px solid #C9C9C9;
+    margin-bottom: 20px;
+    position: relative;
+}
+.ads-video-scroll .ads-video .sub-video {
+    width: 43%;
+    height: calc(100% - 13px);
+    background: khaki;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.ads-video .title {
+    position: absolute;
+    left: calc(43% + 10px);
+    top: 0;
+}
+.video-controls {
+    position: absolute;
+    right: 13px;
+    bottom: 13px;
+    width: 97px;
+    height: 38px;
+}
+.ico-pause {
+    width: 38px;
+    height: 38px;
+    float: left;
+}
+.ico-stop {
+    margin-left: 11px;
+    width: 38px;
+    height: 38px;
+    float: left;
+}
+.ico-play {
+    width: 38px;
+    height: 38px;
+    float: left;
+}
+.video-area .mic i {
+    font-size: 1.4rem;
+    margin-top: 4.3px;
+    line-height: inherit;
+}
+.video-area.share .mic i {
+    margin-left: 4px;
+}
+#footer .setting .logout {
+    background: #E1041B;
+}
+.video-area.share .hover {
+    width: 225px;
+}
+.chat-areas .submit-area .submit-area-form {
+    width: calc(100% - 50px);
+    border: 1px solid #BDBDBD;
+}
+.ico-airplane {
+    color: #D0D0D0;
+}
+@media only screen and (max-width:1300px) {
+    .ads-video-scroll .ads-video {
+        max-height: 108px;
+    }
+}
+@media only screen and (max-width:1150px) {
+    #admin .video-area-scroll .video-area {
+        width: calc(24.4% - 8px);
+    }
+    .ads-video-scroll .ads-video .sub-video {
+        width: 50%;
+    }
+    .ads-video .title {
+        left: calc(50% + 10px);
+    }
+    .video-controls {
+        right: 3px;
+    }
+}
+@media only screen and (max-width:1025px) {
+    #admin #footer, #admin #header {
+        height: 100px;
+        padding: 25px 0;
+        padding-left: 13px;
+    }
+    .ads-video-scroll .ads-video {
+        height: 91px;
+    }
+    #admin #main {
+        top: 100px;
+    }
+    #admin .chat-areas {
+        top: 121px;
+        bottom: 100px;
+    }
+    #admin .video-area-scroll .video-area {
+        width: calc(32.3% - 8px);
+    }
+    .video-controls {
+        right: 5px;
+    }
+}
+.chat-areas .user-post .msg ul li:first-child span {
+    border-radius: 4px 16px 16px 16px;
+}
+.chat-areas .my-post .msg ul li:first-child span {
+    border-radius: 16px 4px 16px 16px;
+}
+.ico-play {
+    display: none;
+}
+.ico-pause {
+    display: block;
+}
+.play .ico-play {
+    display: block;
+}
+.play .ico-pause {
+    display: none;
+}
+.name-ad {
+	position: absolute;
+	bottom: 32px;
+	left: 30px;
+	padding: 5px 15px;
+	border-radius: 10px;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	font-size: 1.2375rem
+}
+.boderexam1 {
+    border: 51px dashed green;

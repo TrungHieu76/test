@@ -1,0 +1,365 @@
+#footer .setting .logout {
+    background: #333333;
+}
+@media only screen and (max-width:768px) {
+    #cocacola-user #footer nav ul li.off {
+        color: #fff ;
+    }
+    .video-area.share .mic {
+        top: 5%;
+        left: 3%;
+    }
+    [data-pin="5"] .video-area:nth-child(1) {
+        grid-row-end: 3;
+        margin: 1px;
+    }
+    .chat-areas .submit-area .submit-area-form {
+        width: 90%;
+    }
+    .pagetit {
+        background-color:#E1041B;
+    }
+    .chat-areas {
+        width: 100vw !important;
+        height: 100vh;
+        margin: 1px;
+    }
+    #main {
+        top: 16%;
+        bottom: 100px;
+        right: 4px;
+        left: 4px;
+    }
+    .video-areas {
+        padding: 0 2px 5px 2px !important;
+    }
+    #footer nav .sec.act ul {
+        padding: 2px 0px;
+    }
+    .name-user {
+        position: absolute;
+        bottom: 20px;
+        left: 40px;
+        padding: 16px 90px;
+        border-radius: 14px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        font-size: 0.8375rem !important;
+    }
+    #container{
+        background-color: #E1041B ;
+    }
+    .video-area.share .mic {
+        width: 41px;
+        height: 43px;
+    }
+    #footer{
+        position: fixed;
+        background: #fff;
+        height: 13vh !important;
+        /* overflow: hidden; */
+    }
+    #footer nav ul li{
+        color: #E1041B;
+    }
+    #footer nav .sec .ell i {
+        color: #333333;
+    }
+    #header {
+        padding-top: 8px;
+        padding-right: 15px;
+        padding-bottom: 8px;
+        padding-left: 15px;
+        height: 12vh;
+        background: #fff;
+    }
+    #header .logo{
+        background: url(../img/lg_cocacola_sm.png);
+        background-repeat: no-repeat;
+        image-rendering:pixelated;
+        background-size: 100%;
+        width: 20vw;
+        height: 100%;
+        margin: 0;
+    }
+    #header .option li i {
+        color: #333333;
+    }
+    #header .banner-header {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 24px;
+        background: url(../img/banner_header_sm.png);
+        image-rendering:pixelated;
+        background-size: 100% 25px;
+    }
+    .video-right {
+        grid-column-end: 3;
+        grid-column-start: 1;
+        grid-row-start: 3;
+        grid-row-end: 6;
+        width: 100%;
+        height: 100%;
+        display: block;
+        overflow: scroll;
+        overflow-y: hidden;
+        touch-action: pan-x;
+    }
+    .video-area-scroll {
+        display: flex;
+        flex-wrap: wrap;
+        height: 100%;
+        width: 1000px;
+    }
+    .video-area-scroll .video-area {
+        width: 40vw;
+        height: 50%;
+    }
+}
+@media only screen and (min-width:769px) {
+    .video-area.share .mic {
+        display: block;
+    }
+    .video-areas {
+        align-items: unset;
+    }
+    .video-area.share .mic {
+        left: 32px;
+    }
+    .chat-areas .btnClose,
+    #cocacola-user #footer nav ul li {
+        color: #E1041B;
+    }
+    [data-pin] .video-area:nth-child(n + 2) .mic {
+        -webkit-transform: none; 
+        -webkit-transform-origin: none;
+        transform: none;
+        transform-origin: none;
+    }
+    .video-area.share .hover {
+        display: block;
+        height: 29px;
+        width: 159px;
+        left: 32px;
+        padding-top: 6.5px;
+    }
+    .video-area.share .hover .ico-pin {
+        display: none;
+    }
+    #cocacola-user #footer,
+    #cocacola-user #header{
+        background: #fff;
+        padding: 7.5px 0;
+        padding-left: 13px;
+        height: 96px;
+    }
+    #cocacola-user #footer{
+        height: 89px;
+    }
+    #cocacola-user #main {
+        top: 96px;
+    }
+    #cocacola-user #main .video-areas {
+        background: #E1041B;
+    }
+    #cocacola-user #main .video-area.share {
+        grid-column-end: 1;
+        grid-column-start: 1;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        width: 100%;
+        height: 100%;
+        padding: 0 0 12px 10px;
+        align-items: flex-end;
+        justify-content: left;
+        margin: 0;
+        background: #E1041B;
+        border-radius: unset;
+    }
+    #cocacola-user #main .video-area.share .video {
+        left: 20px;
+        right: 20px;
+        border-radius: 12px;
+        overflow: hidden;
+    }
+    .video-area .mic i {
+        font-size: 1.4rem;
+        margin-top: 4.3px;
+        line-height: inherit;
+    }
+    .video-area.share .mic i {
+        margin-left: 4px;
+    }
+    #cocacola-user .logo{
+        background: url(../img/lg_cocacola.png);
+        image-rendering:pixelated;
+        background-size: 158px 86px;
+        width: 158px;
+        height: 100%;
+        margin: 0;
+    }
+    #cocacola-user .header-right{
+        position: absolute;
+        right: 0;
+        background: url(../img/header-right.png);
+        image-rendering:pixelated;
+        background-size: 83vw 65.08px;
+        width: 83vw;
+        float: right;
+        height: 66.08px;
+        margin-top: 7.5px;
+    }
+    #cocacola-user .video-areas {
+        grid-template-columns: 1fr 24vw;
+        grid-template-rows: 21px 1fr 90px;
+        padding: 0 0 0 0;
+    }
+    .img-footer {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-end: 1;
+        grid-column-start: 1;
+        width: 100%;
+        height: 100%;
+        background: url(../img/banner_video.png);
+        image-rendering:pixelated;
+        background-size: 70% 107px;
+        background-position-y: bottom;
+        background-position-x: 20px; 
+        background-repeat: repeat-y;
+        position: relative;
+    }
+    .img-footer .logo-white {
+        position: absolute;
+        right: 10%;
+        top: 25px;
+        width: 93px;
+        height: 41px;
+        background: url(../img/lg_cocacola_white.png);
+        background-position: left;
+        background-size: 93px 41px;
+    }
+    #cocacola-user .video-right {
+        display: flex;
+        padding-right: 11px;
+        grid-row-start: 1;
+        grid-row-end: 4;
+        width: 100%;
+        height: 100%;
+        background-color: #B40316;
+    }
+    #cocacola-user .video-area-scroll {
+        margin-top: 21px;
+        width: 100%;
+        overflow: auto;
+        padding: 0 0 0 0;
+    }
+    #cocacola-user .video-area-scroll .video-area:nth-child(1){
+        margin-top: 0;
+    }
+    #cocacola-user .video-area-scroll::-webkit-scrollbar-track
+    {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        border-radius: 10px;
+        background-color: #F5F5F5;
+        overflow: hidden;
+    }
+    
+    #cocacola-user .video-area-scroll::-webkit-scrollbar
+    {
+        width: 12px;
+        background-color: #B40316;
+        background-clip: padding-box;  
+    }
+    
+    #cocacola-user .video-area-scroll::-webkit-scrollbar-thumb
+    {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+        background-color: #E1041B;
+        border: 3px solid #F5F5F5;
+        
+    }
+    #cocacola-user .video-area-scroll .video-area {
+        margin: auto;
+        width: calc(100% - 32px);
+        height: 26%;
+        margin-bottom: 16px;
+    }
+    #footer .setting .conf.ico-setting {
+        color: #E1041B;
+        font-size: 58px;
+        border: 3px solid #E1041B;
+    }
+    .chat-areas {
+        border-radius: 15px 15px 0 0;
+        top: 0;
+        bottom: 90px;
+        width: 24vw;
+    }
+    .chat-areas .submit-area {
+        background: #BEBEBE;
+        border: none;
+    }
+    
+    .chat-areas .chat-scroll {
+        top: 68px;
+    }
+    
+    .chat-scroll::-webkit-scrollbar-track
+    {
+        background-color: transparent;
+        overflow: hidden;
+    }
+    
+    .chat-scroll::-webkit-scrollbar
+    {
+        width: 6px;
+        background-color: transparent;
+    }
+    
+    .chat-scroll::-webkit-scrollbar-thumb
+    {
+        border-radius: 10px;
+        background-color: #97A0A2;
+        
+    }
+    .chat-areas .submit-area .submit-area-form {
+        width: calc(100% - 50px);
+        border: 1px solid #BDBDBD;
+    }
+    .ico-airplane {
+        color: #D0D0D0;
+    }
+    #footer nav ul li i {
+        margin-top: 1px;
+        font-size: 40px;
+        margin-bottom: 5px;
+    }
+    #cocacola-user #footer nav ul li.off {
+        color: #fff ;
+    }
+}
+@media only screen and (max-width:1025px) {
+    #cocacola-user .video-areas {
+        grid-template-columns: 1fr 30vw;
+    }
+    .ads-video-scroll .ads-video {
+        height: 91px;
+    }
+    .chat-areas {
+        width: 30vw;
+    }
+}
+.name-user {
+	position: absolute;
+	bottom: 20px;
+	left: 40px;
+	padding: 5px 30px;
+	border-radius: 14px;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	font-size: 1.2375rem
+}

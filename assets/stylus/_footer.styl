@@ -1,0 +1,184 @@
+#footer
+	height 90px
+	background-color #212935
+	position absolute
+	left 0
+	right 0
+	bottom 0
+	z-index 10
+	display flex
+	justify-content center
+	align-items center
+	+sp()
+		justify-content space-around
+	nav
+		display flex
+		ul
+			display flex
+			li
+				color #ffffff
+				text-align center
+				margin 0 10px
+				width 88px
+				height 70px
+				border-radius 12px
+				padding-top 5px
+				+sp()
+					width 75px
+					margin 0 5px
+				&.act
+					background-color #7E7E7E88
+				i
+					px(36)
+					display block
+					line-height 0
+				i.ico-camera-off
+					display none
+					color #DB4C4C
+				i.ico-mic-off
+					display none
+					color #DB4C4C
+				div
+					px(12)
+				&.off
+					i.ico-camera
+						display none
+					i.ico-mic
+						display none
+					i.ico-camera-off
+						display block
+					i.ico-mic-off
+						display block
+		.sec
+			ul
+				+sp()
+					display none
+			.ell
+				display none
+				+sp()
+					display flex
+					justify-content center
+					align-items center
+					px(36)
+					color #ffffff
+					width 75px
+					height 100%
+					border-radius 12px
+					i
+						line-height 0
+						display inline-block
+			&.act
+				+sp()
+					position relative
+					.ell
+						background-color #7E7E7E88
+					ul
+						display flex
+						position absolute
+						left 50%
+						background-color #ffffff
+						padding 5px 30px
+						border-radius 12px
+						transform translate(-50%,-215%)
+						&:after
+							content "▼"
+							color #ffffff
+							position absolute
+							left 50%
+							bottom -20px
+							px(20)
+							transform translate(-50%,0)
+
+						li
+							color #4B4B4B
+	.setting
+		position absolute
+		right 23px
+		top 0
+		height 100%
+		display flex
+		color #ffffff
+		align-items center
+		+sp()
+			position static
+		i
+			px(36)
+			color #ffffff
+			vertical-align middle
+		.conf
+			width 58px
+			height 58px
+			border-radius 14px
+			border 1px solid #ffffff
+			display flex
+			justify-content center
+			align-items center
+			+sp()
+				display none
+			i
+				display flex
+				justify-content center
+				align-items center
+		.logout
+			background-color #AF4728
+			width 140px
+			height 58px
+			border-radius 14px
+			text-align center
+			display flex
+			justify-content center
+			align-items center
+			+sp()
+				width auto
+				height auto
+				padding 15px
+				px(14)
+			i
+				vertical-align middle
+				display inline-block
+				margin-right 10px
+				line-height 0
+				+sp()
+					display none
+
+
+		li + li
+			margin-left 15px
+			+sp()
+				margin-left 0
+
+
+	&.login
+		justify-content space-between
+		background-color #ffffff
+		+sp()
+			display none
+		.banner
+			margin-left 20px
+			display flex
+			li
+				a
+					&:hover
+						opacity 0.7
+			li + li
+				margin-left 28px
+
+		.chngeStyle
+			margin-right 20px
+			li
+				a
+					text-decoration none
+					display flex
+					justify-content center
+					align-items center
+					width 106px
+					height 44px
+					background-color #43536A
+					color #ffffff
+					border 1px solid #43536A
+					px(14)
+					bold()
+					border-radius 22px
+					&:hover
+						background-color #ffffff
+						color #43536A

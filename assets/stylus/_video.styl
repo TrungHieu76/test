@@ -1,0 +1,490 @@
+.video-areas
+	display flex
+	justify-content center
+	align-items center
+	position absolute
+	flex-wrap wrap
+	left 0
+	right 0
+	top 0
+	bottom 0
+	//padding 0 20px 20px 20px
+	padding 0 0 20px 0
+	+sp()
+		padding 0 2px 20px 2px !important
+
+	[data-pin="4"] &
+		display grid
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+		padding 0 20px 20px 20px
+		+sp()
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-rows: repeat(4, 1fr);
+
+
+	[data-pin="5"] &
+		display grid
+		grid-template-columns repeat(4, 1fr);
+		grid-template-rows repeat(4, 1fr);
+		padding 0 20px 20px 20px
+		+sp()
+			grid-template-columns 1fr 1fr 1fr 55px
+			grid-template-rows repeat(4, 1fr);
+	[data-pin="6"] &
+		display grid
+		grid-template-columns repeat(4, 1fr)
+		grid-template-rows 1fr 1fr 1fr 1fr 55px
+		padding 0 20px 20px 20px
+		+sp()
+			grid-template-columns 1fr 1fr 1fr 1fr 55px
+			grid-template-rows repeat(4, 1fr);
+
+
+	[data-chat="1"] &
+		right 353px
+
+
+.video-area
+	width calc(49% - 4px)
+	height calc((49vw * 0.59) - 4px)
+	//max-height calc(49% - 4px)
+	max-height calc(90% - 4px)
+	overflow hidden
+	border-radius 12px
+	position relative
+	margin 4px
+	display flex
+	justify-content center
+	align-items center
+	+sp()
+		width calc(99% - 2px)
+		height calc(99% - 2px)
+		max-height 100%
+		border-radius 8px
+		margin 2px
+	.name
+		position absolute
+		left 11px
+		bottom 14px
+		border-radius 9px
+		color #ffffff
+		px(15)
+		background-color rgba(0,0,0,0.67)
+		padding 5px 10px
+		+sp()
+			px(12)
+
+	.mic
+		width 31px
+		height 31px
+		position absolute
+		left 11px
+		top 10px
+		background #12A06F88// url("../img/ico_mic.svg") no-repeat center center
+		border-radius 6px
+		overflow hidden
+		display flex
+		justify-content center
+		align-items center
+		i
+			color #ffffff
+			px(28)
+			line-height 0
+			&.ico-mic-off
+				display none
+		.volume
+			position absolute
+			left 0
+			right 0
+			bottom 0
+			height 50%
+			background-color #3AEDAFAA
+
+		&.off
+			background-color #EA4B4B88
+			//width 26px
+			//height 26px
+			i
+				//px(20)
+				&.ico-mic
+					display none
+				&.ico-mic-off
+					display block
+
+
+			.volume
+				display none
+	.video
+		position absolute
+		left 0
+		right 0
+		top 0
+		bottom 0
+		img,video
+			position absolute
+			left 0
+			top 0
+			width 100%
+			height 100%
+			object-fit cover
+			background-color #000000
+	.hover
+		position relative
+		z-index 10
+		color #ffffff
+		px(14)
+		width 96%
+		max-width 350px
+		padding 0
+		background-color rgba(0,0,0,0.5)
+		border-radius 14px
+		text-align center
+		display none
+		line-height 1
+		+sp()
+			display block
+			position absolute
+			right 10px
+			bottom 30px
+			width auto
+			height auto
+			border-radius 50%
+			padding 5px
+			span
+				display none
+		i
+			px(44)
+			line-height 0
+			display inline-block
+			margin-right 15px
+			vertical-align middle
+			+sp()
+				margin-right 0
+				px(36)
+	&:hover
+		.hover
+			display block
+
+	//&:nth-child(n + 2)
+	//	+sp()
+	//		display none
+	[data-col="1"] &
+		+sp()
+			&:nth-child(n + 2)
+				display none
+	[data-col="2"] &
+		+sp()
+			height calc(49% - 2px)
+
+
+	[data-col="3"] &
+		width calc(32.3% - 4px)
+		height calc((32.3vw * 0.73) - 4px)
+		max-height calc(90% - 4px)
+		+sp()
+			width calc(100% - 2px)
+			height calc(70% - 2px)
+			max-height calc(90% - 2px)
+			&:nth-child(n + 2)
+				width calc(49% - 2px)
+				height calc(30% - 2px)
+				display block
+				.mic
+					display none
+				.hover
+					display none
+			&:nth-child(n + 5)
+				display none
+
+
+	[data-col="4"] &
+		width calc(24% - 4px)
+		height calc((24vw * 0.6) - 4px)
+		max-height calc(32.3% - 4px)
+		+sp()
+			width calc(100% - 2px)
+			height calc(70% - 2px)
+			max-height calc(90% - 2px)
+			margin 2px
+			&:nth-child(n + 2)
+				width calc(29.2% - 2px)
+				height calc(30% - 2px)
+				display block
+				.mic
+					display none
+				.hover
+					display none
+			&:nth-child(n + 5)
+				display none
+			&:nth-child(n + 11)
+				display block
+				width calc(10% - 2px)
+
+
+	[data-pin="4"] &
+		width calc(100% - 10px)
+		height calc(100% - 10px)
+		max-height calc(100% - 10px)
+		+sp()
+			width calc(100% - 2px)
+			height calc(100% - 2px)
+			max-height calc(100% - 2px)
+			margin 2px
+			&:nth-child(n + 2)
+				.name
+					white-space nowrap
+				.mic
+					display none
+				.hover
+					display none
+		&:nth-child(1)
+			grid-column-start: 1;
+			grid-column-end: 4;
+			grid-row-start: 1;
+			grid-row-end: 4;
+
+	[data-pin="5"] &
+		width calc(100% - 10px)
+		height calc(100% - 10px)
+		max-height calc(100% - 10px)
+		+sp()
+			width calc(100% - 2px)
+			height calc(100% - 2px)
+			max-height calc(100% - 2px)
+			margin 2px
+			&:nth-child(n + 2)
+				.name
+					white-space nowrap
+				.mic
+					display none
+				.hover
+					display none
+		&:nth-child(1)
+			grid-column-start: 1;
+			grid-column-end: 4;
+			grid-row-start: 1;
+			grid-row-end: 5;
+			+sp()
+				grid-column-start: 1;
+				grid-column-end: 5;
+				grid-row-start: 1;
+				grid-row-end: 4;
+
+	[data-pin="6"] &
+		width calc(100% - 10px)
+		height calc(100% - 10px)
+		max-height calc(100% - 10px)
+		+sp()
+			width calc(100% - 2px)
+			height calc(100% - 2px)
+			max-height calc(100% - 2px)
+			margin 2px
+			&:nth-child(n + 2)
+				.name
+					white-space nowrap
+				.mic
+					display none
+				.hover
+					display none
+		&:nth-child(1)
+			grid-column-start: 1;
+			grid-column-end: 4;
+			grid-row-start: 1;
+			grid-row-end: 6;
+			+sp()
+				grid-column-start: 1;
+				grid-column-end: 6;
+				grid-row-start: 1;
+				grid-row-end: 4;
+
+	[data-pin] &:nth-child(n + 2)
+		.name
+			transform scale(0.6)
+			transform-origin left bottom
+			+sp()
+				left 5px
+		.mic
+			transform scale(0.6)
+			transform-origin left top
+		.hover
+			px(12)
+			i
+				margin-right 5px
+				px(30)
+	&.share
+		.mic
+			display none
+			+sp()
+				display flex
+				z-index 10
+				width 42px
+				height 42px
+				i
+					px(34)
+		.hover
+			display none
+			+sp()
+				display block
+		.name
+			left 0
+			top 0
+			bottom auto
+			border-radius 0 0 12px 0
+			padding 10px 40px 10px 15px
+			px(16)
+			+sp()
+				right 0
+				border-radius 0
+				padding-left 70px
+				padding-right 10px
+
+			div
+				px(14)
+
+///////////////
+.video-area.me
+	width 114px
+	height 73px
+	overflow hidden
+	border-radius 5px
+	position relative
+	max-height 100%
+	+sp()
+		display none
+	[data-me="1"] &
+		+sp()
+			display block
+			position fixed
+			right 10px
+			top 120px
+			z-index 20
+	.name
+		position absolute
+		left 5px
+		bottom 3px
+		border-radius 5px
+		color #ffffff
+		px(14)
+		bold()
+		background-color rgba(0,0,0,0.67)
+		padding 2px 4px
+
+	.mic
+		width 13px
+		height 13px
+		position absolute
+		left 5px
+		top 5px
+		background #12A06F88// url("../img/ico_mic.svg") no-repeat center center
+		background-size 5.4px 8.7px
+		border-radius 2px
+		overflow hidden
+		i
+			color #ffffff
+			px(14)
+			line-height 0
+		.volume
+			position absolute
+			left 0
+			right 0
+			bottom 0
+			height 50%
+			background-color #3AEDAFAA
+		&.off
+			background-color #EA4B4B88
+			.volume
+				display none
+
+	.video
+		position absolute
+		left 0
+		right 0
+		top 0
+		bottom 0
+		img,video
+			position absolute
+			left 0
+			top 0
+			width 100%
+			height 100%
+			object-fit cover
+			background-color #000000
+
+.video-area.others
+	background-color #212935
+	display flex
+	justify-content center
+	align-items center
+	dl
+		display flex
+		+sp()
+			flex-flow column
+			justify-content center
+			align-items center
+			height 100%
+			img
+				width 32px
+
+		dd
+			margin-left 25px
+			px(35)
+			color #808080
+			+sp()
+				margin-left 0
+				px(14)
+
+
+	[data-pin] &
+		dl
+			dt
+				line-height 1
+				img
+					width 32px
+			dd
+				px(20)
+				margin-left 5px
+
+.video-area.share
+	background-color #A8A8A8
+	display flex
+	justify-content center
+	align-items center
+	.share-area
+		figure
+			text-align center
+			margin-bottom 30px
+			+sp()
+				margin-bottom 15px
+				line-height 1
+			img
+				+sp()
+					width 60px
+		.tit
+			color #ffffff
+			px(22)
+			margin-bottom 40px
+			text-align center
+			+sp()
+				margin-bottom 20px
+		ul
+			display flex
+			li
+				input
+					border none
+					width 225px
+					border-radius 4px
+					padding 5px 10px 5px 25px
+					color #777777
+					background #ffffff url("../img/ico_rock.png") no-repeat 5px center
+					background-size 11px 14px
+
+				button
+					border none
+					background-color #E58150
+					color #ffffff
+					padding 7px 15px
+					border-radius 4px
+
+			li + li
+				margin-left 15px

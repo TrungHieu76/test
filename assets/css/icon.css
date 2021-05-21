@@ -1,0 +1,140 @@
+@font-face {
+	font-family: "icon";
+	src: url('../../fonts/icon.eot');
+	src: url('../../fonts/icon.eot?#iefix') format('eot'),
+		url('../../fonts/icon.woff') format('woff'),
+		url('../../fonts/icon.ttf') format('truetype'),
+		url('../../fonts/icon.svg#icon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "iconcoca";
+	src: url('../../fonts/icon_coca.eot');
+	src: url('../../fonts/icon_coca.eot?#iefix') format('eot'),
+		url('../../fonts/icon_coca.woff') format('woff'),
+		url('../../fonts/icon_coca.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+[class^="ico-"]:before, [class*=" ico-"]:before {
+	display: inline-block;
+	font-family: "icon", "iconcoca";
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.ico-lg {
+	font-size: 1.3333333333333333em;
+	line-height: 0.75em;
+	vertical-align: -15%;
+}
+.ico-2x { font-size: 2em; }
+.ico-3x { font-size: 3em; }
+.ico-4x { font-size: 4em; }
+.ico-5x { font-size: 5em; }
+.ico-fw {
+	width: 1.2857142857142858em;
+	text-align: center;
+}
+.ico-airplane:before { content: "\e90d" } /**/
+.ico-arw-down:before { content: "\e913" } /**/
+.ico-arw-up:before { content: "\EA03" } /**/
+.ico-bill:before { content: "\EA04" } /**/
+.ico-cal:before { content: "\EA05" } /**/
+.ico-camera-c:before { content: "\EA06" } /**/
+.ico-camera-f:before { content: "\EA07" } /**/
+.ico-camera-off:before { content: "\EA08" } /**/
+.ico-camera:before { content: "\EA09" } /**/
+.ico-chat:before { content: "\e911" } /**/
+.ico-cross:before { content: "\EA0B" } /**/
+.ico-display:before { content: "\e909" } /**/
+.ico-ell:before { content: "\EA0D" } /**/
+.ico-link:before { content: "\EA0E" } /**/
+.ico-logout:before { content: "\e902" } /**/
+.ico-mic-f:before { content: "\EA10" } /**/
+.ico-mic-off:before { content: "\e914" } /**/
+.ico-mic:before { content: "\e901" } /**/
+.ico-pin:before { content: "\EA13" } /**/
+.ico-setting-f:before { content: "\EA14" } /**/
+.ico-setting:before { content: "\e910" } /**/
+.ico-speaker-f:before { content: "\EA16" } /**/
+.ico-user:before { content: "\EA17" } /**/
+.ico-all-mic:before { content: "\EA17" } /**/
+.ico-Waiting {
+	background: url('../svg/clock.svg');
+	background-size: 20.25px 32px;
+	width: 20.25px;
+	height: 32px;
+	margin: auto;
+}
+.ico-pause {
+	background: url('../svg/pause.svg');
+	background-size: 38px 38px;
+  }
+.ico-stop {
+	background: url('../svg/stop.svg');
+	background-size: 38px 38px;
+}
+.ico-play {
+	background: url('../svg/play.svg');
+	background-size: 38px 38px;
+}
+.ico-camera-all:before {
+	content: "\e90e";
+	color: #fff;
+  }
+  .ico-mic-all:before {
+	content: "\e90f";
+	color: #fff;
+  }
+
+
+/**/
+[class^="af-ico-"]:after, [class*=" af-ico-"]:after {
+	display: inline-block;
+	font-family: "icon";
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.ico-lg {
+					 font-size: 1.3333333333333333em;
+					 line-height: 0.75em;
+					 vertical-align: -15%;
+				 }
+.af-ico-2x { font-size: 2em; }
+.af-ico-3x { font-size: 3em; }
+.af-ico-4x { font-size: 4em; }
+.af-ico-5x { font-size: 5em; }
+.af-ico-fw {
+					 width: 1.2857142857142858em;
+					 text-align: center;
+				 }
+.af-ico-airplane:after { content: "\EA01" } /**/
+.af-ico-arw-down:after { content: "\EA02" } /**/
+.af-ico-arw-up:after { content: "\EA03" } /**/
+.af-ico-bill:after { content: "\EA04" } /**/
+.af-ico-cal:after { content: "\EA05" } /**/
+.af-ico-camera-c:after { content: "\EA06" } /**/
+.af-ico-camera-f:after { content: "\EA07" } /**/
+.af-ico-camera-off:after { content: "\EA08" } /**/
+.af-ico-camera:after { content: "\EA09" } /**/
+.af-ico-chat:after { content: "\EA0A" } /**/
+.af-ico-cross:after { content: "\EA0B" } /**/
+.af-ico-display:after { content: "\EA0C" } /**/
+.af-ico-ell:after { content: "\EA0D" } /**/
+.af-ico-link:after { content: "\EA0E" } /**/
+.af-ico-logout:after { content: "\EA0F" } /**/
+.af-ico-mic-f:after { content: "\EA10" } /**/
+.af-ico-mic-off:after { content: "\EA11" } /**/
+.af-ico-mic:after { content: "\EA12" } /**/
+.af-ico-pin:after { content: "\EA13" } /**/
+.af-ico-setting-f:after { content: "\EA14" } /**/
+.af-ico-setting:after { content: "\EA15" } /**/
+.af-ico-speaker-f:after { content: "\EA16" } /**/
+.af-ico-user:after { content: "\EA17" } /**/

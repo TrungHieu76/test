@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="47" height="47" viewBox="0 0 47 47">
+  <defs>
+    <clipPath id="clip-path">
+      <circle id="楕円形_9" data-name="楕円形 9" cx="23.5" cy="23.5" r="23.5" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="マスクグループ_2" data-name="マスクグループ 2" clip-path="url(#clip-path)">
+    <g id="グループ_50" data-name="グループ 50" transform="translate(-19.19)">
+      <rect id="長方形_1097" data-name="長方形 1097" width="85" height="47" transform="translate(0.19)" fill="#eba6a6"/>
+      <g id="グループ_1" data-name="グループ 1" transform="translate(28.048 8.857)">
+        <ellipse id="楕円形_1" data-name="楕円形 1" cx="10.5" cy="9.5" rx="10.5" ry="9.5" transform="translate(4.143 0.143)" fill="#f4f4f4"/>
+        <path id="長方形_1098" data-name="長方形 1098" d="M14.5,0h0A14.5,14.5,0,0,1,29,14.5V17a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V14.5A14.5,14.5,0,0,1,14.5,0Z" transform="translate(0.143 21.143)" fill="#f4f4f4"/>
+      </g>
+    </g>
+  </g>
+</svg>

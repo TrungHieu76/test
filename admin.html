@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>VSS</title>
+  <link rel="stylesheet" href="assets/css/icon.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/admin.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body id="admin">
+<div id="container" data-pin="5">
+  <header id="header">
+
+    <div class="header-left">
+      <div class="logo">ペタビット</div>
+    </div>
+    <div class="header-right"></div>
+
+    <ul class="option">
+      <li><i class="ico-camera-c"></i></li>
+      <li><i class="ico-setting-f"></i></li>
+    </ul>
+
+  </header>
+
+  <main id="main">
+
+    <div class="video-areas">
+
+      <div class="video-area share">
+
+        <div class="video">
+          <img src="assets/img/avatar_share_creen.png" alt="">
+        </div>
+        <div class="mic">
+          <i class="ico-mic"></i>
+          <i class="ico-mic-off"></i>
+          <div class="volume"></div>
+        </div>
+
+        <div class="name-ad">名前が表示されます（あなた)</div>
+        <div id="videos-play">
+            <div class="ads-video-scroll">
+              <div class="ads-video">
+                <div class="sub-video">
+                  <img src="assets/img/sub_video.png" width="100%" height="100%" alt="">
+                </div>
+                <div class="title">動画タイトル1</div>
+                <div class="video-controls">
+                  <a onclick="playVideo(this)">
+                    <div class="ico-pause">
+                    </div>
+                    <div class="ico-play">
+                    </div>
+                  </a>
+                  <div class="ico-stop">
+                  </div>
+                </div>
+              </div>
+              <div class="ads-video">
+                <div class="sub-video">
+                  <img src="assets/img/sub_video.png" width="100%" height="100%" alt="">
+                </div>
+                <div class="title">動画タイトル2</div>
+                <div class="video-controls">
+                  <a onclick="playVideo(this)">
+                    <div class="ico-pause">
+                    </div>
+                    <div class="ico-play">
+                    </div>
+                  </a>
+                  <div class="ico-stop">
+                  </div>
+                </div>
+              </div>
+              <div class="ads-video">
+                <div class="sub-video">
+                  <img src="assets/img/sub_video.png" width="100%" height="100%" alt="">
+                </div>
+                <div class="title">動画タイトル3</div>
+                <div class="video-controls">
+                  <a onclick="playVideo(this)">
+                    <div class="ico-pause">
+                    </div>
+                    <div class="ico-play">
+                    </div>
+                  </a>
+                  <div class="ico-stop">
+                  </div>
+                </div>
+              </div>
+              <div class="ads-video">
+                <div class="sub-video">
+                  <img src="assets/img/sub_video.png" width="100%" height="100%" alt="">
+                </div>
+                <div class="title">動画タイトル4</div>
+                <div class="video-controls">
+                  <a onclick="playVideo(this)">
+                    <div class="ico-pause">
+                    </div>
+                    <div class="ico-play">
+                    </div>
+                  </a>
+                  <div class="ico-stop">
+                  </div>
+                </div>
+              </div>
+              <div class="ads-video">
+                <div class="sub-video">
+                  <img src="assets/img/sub_video.png" width="100%" height="100%" alt="">
+                </div>
+                <div class="title">動画タイトル5</div>
+                <div class="video-controls">
+                  <a onclick="playVideo(this)">
+                    <div class="ico-pause">
+                    </div>
+                    <div class="ico-play">
+                    </div>
+                  </a>
+                  <div class="ico-stop">
+                  </div>
+                </div>
+              </div>
+              
+             
+            </div>
+        </div>
+      </div>
+      <div class="img-footer">
+        <div class="logo-white"></div>
+      </div>
+      <div class="video-right">
+        <div class="video-area-scroll">
+            <div class="video-area" onclick="myFunction()">
+                <div class="video">
+                <img src="assets/img/dummy/img_user_l.png" alt="">
+                </div>
+                <div class="mic">
+                <i class="ico-mic"></i>
+                <i class="ico-mic-off"></i>
+                <div class="volume"></div>
+                </div>
+                <div class="name">お客様名</div>
+                <div class="hover" ><i class="ico-pin"></i><span onclick="myFunction()">名前 さんを<br>メイン画面に固定表示する</span></div>
+            </div>
+            <div class="video-area">
+                <div class="video">
+                <img src="assets/img/dummy/img_user_l.png" alt="">
+                </div>
+                <div class="mic">
+                <i class="ico-mic"></i>
+                <i class="ico-mic-off"></i>
+                <div class="volume"></div>
+                </div>
+                <div class="name">お客様名</div>
+                <div class="hover"><i class="ico-pin"></i><span>名前 さんを<br>メイン画面に固定表示する</span></div>
+            </div>
+            <div class="video-area">
+                <div class="video">
+                <img src="assets/img/dummy/img_user_l.png" alt="">
+                </div>
+                <div class="mic off">
+                <i class="ico-mic"></i>
+                <i class="ico-mic-off"></i>
+                <div class="volume"></div>
+                </div>
+                <div class="name">お客様名</div>
+                <div class="hover"><i class="ico-pin"></i><span>名前 さんを<br>メイン画面に固定表示する</span></div>
+            </div>
+            <div class="video-area">
+                <div class="video">
+                <img src="assets/img/dummy/img_user_l.png" alt="">
+                </div>
+                <div class="mic">
+                <i class="ico-mic"></i>
+                <i class="ico-mic-off"></i>
+                <div class="volume"></div>
+                </div>
+                <div class="name">お客様名</div>
+                <div class="hover"><i class="ico-pin"></i><span>名前 さんを<br>メイン画面に固定表示する</span></div>
+            </div>
+            <div class="video-area">
+                <div class="video">
+                <img src="assets/img/dummy/img_user_l.png" alt="">
+                </div>
+                <div class="mic">
+                <i class="ico-mic"></i>
+                <i class="ico-mic-off"></i>
+                <div class="volume"></div>
+                </div>
+                <div class="name">お客様名</div>
+                <div class="hover"><i class="ico-pin"></i><span>名前 さんを<br>メイン画面に固定表示する</span></div>
+            </div>
+            <div class="video-area">
+                <div class="video">
+                <img src="assets/img/dummy/img_user_l.png" alt="">
+                </div>
+                <div class="mic">
+                <i class="ico-mic"></i>
+                <i class="ico-mic-off"></i>
+                <div class="volume"></div>
+                </div>
+                <div class="name">お客様名</div>
+                <div class="hover"><i class="ico-pin"></i><span>名前 さんを<br>メイン画面に固定表示する</span></div>
+            </div>
+            <div class="video-area">
+                <div class="video">
+                <img src="assets/img/dummy/img_user_l.png" alt="">
+                </div>
+                <div class="mic">
+                <i class="ico-mic"></i>
+                <i class="ico-mic-off"></i>
+                <div class="volume"></div>
+                </div>
+                <div class="name">お客様名</div>
+                <div class="hover"><i class="ico-pin"></i><span>名前 さんを<br>メイン画面に固定表示する</span></div>
+            </div>
+            <div class="video-area">
+                <div class="video">
+                <img src="assets/img/dummy/img_user_l.png" alt="">
+                </div>
+                <div class="mic off">
+                <i class="ico-mic"></i>
+                <i class="ico-mic-off"></i>
+                <div class="volume"></div>
+                </div>
+                <div class="name">お客様名</div>
+                <div class="hover"><i class="ico-pin"></i><span>名前 さんを<br>メイン画面に固定表示する</span></div>
+            </div>
+            <div class="video-area">
+                <div class="video">
+                <img src="assets/img/dummy/img_user_l.png" alt="">
+                </div>
+                <div class="mic">
+                <i class="ico-mic"></i>
+                <i class="ico-mic-off"></i>
+                <div class="volume"></div>
+                </div>
+                <div class="name">お客様名</div>
+                <div class="hover"><i class="ico-pin"></i><span>名前 さんを<br>メイン画面に固定表示する</span></div>
+            </div>
+            <div class="video-area">
+                <div class="video">
+                <img src="assets/img/dummy/img_user_l.png" alt="">
+                </div>
+                <div class="mic">
+                <i class="ico-mic"></i>
+                <i class="ico-mic-off"></i>
+                <div class="volume"></div>
+                </div>
+                <div class="name">お客様名</div>
+                <div class="hover"><i class="ico-pin"></i><span>名前 さんを<br>メイン画面に固定表示する</span></div>
+            </div>
+            <div class="video-area">
+                <div class="video">
+                <img src="assets/img/dummy/img_user_l.png" alt="">
+                </div>
+                <div class="mic">
+                <i class="ico-mic"></i>
+                <i class="ico-mic-off"></i>
+                <div class="volume"></div>
+                </div>
+                <div class="name">お客様名</div>
+                <div class="hover"><i class="ico-pin"></i><span>名前 さんを<br>メイン画面に固定表示する</span></div>
+            </div>
+            <div class="video-area">
+                <div class="video">
+                <img src="assets/img/dummy/img_user_l.png" alt="">
+                </div>
+                <div class="mic">
+                <i class="ico-mic"></i>
+                <i class="ico-mic-off"></i>
+                <div class="volume"></div>
+                </div>
+                <div class="name">お客様名</div>
+                <div class="hover"><i class="ico-pin"></i><span>名前 さんを<br>メイン画面に固定表示する</span></div>
+            </div>
+            <div class="video-area">
+                <div class="video">
+                <img src="assets/img/dummy/img_user_l.png" alt="">
+                </div>
+                <div class="mic off">
+                <i class="ico-mic"></i>
+                <i class="ico-mic-off"></i>
+                <div class="volume"></div>
+                </div>
+                <div class="name">お客様名</div>
+                <div class="hover"><i class="ico-pin"></i><span>名前 さんを<br>メイン画面に固定表示する</span></div>
+            </div>
+            <div class="video-area">
+                <div class="video">
+                <img src="assets/img/dummy/img_user_l.png" alt="">
+                </div>
+                <div class="mic">
+                <i class="ico-mic"></i>
+                <i class="ico-mic-off"></i>
+                <div class="volume"></div>
+                </div>
+                <div class="name">お客様名</div>
+                <div class="hover"><i class="ico-pin"></i><span>名前 さんを<br>メイン画面に固定表示する</span></div>
+            </div>
+            <div class="video-area">
+                <div class="video">
+                <img src="assets/img/dummy/img_user_l.png" alt="">
+                </div>
+                <div class="mic">
+                <i class="ico-mic"></i>
+                <i class="ico-mic-off"></i>
+                <div class="volume"></div>
+                </div>
+                <div class="name">お客様名</div>
+                <div class="hover"><i class="ico-pin"></i><span>名前 さんを<br>メイン画面に固定表示する</span></div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+
+  </main>
+  <div class="chat-areas">
+
+    <div class="pagetit">
+      <i class="ico-cross"></i>
+      チャット
+    </div>
+  
+    <div class="chat-scroll">
+  
+      <div class="user-post">
+        <figure>
+          <img src="assets/img/ico_user_blue.svg" alt="">
+        </figure>
+        <div class="msg">
+          <div class="name">株式会社テレワーク　田中様</div>
+          <ul>
+            <li><span>メッセージが入ります</span></li>
+            <li><span>メッセージが入りますメッセージが<br>入ります</span></li>
+            <li><span>メッセージが入ります</span></li>
+          </ul>
+        </div>
+  
+      </div>
+  
+      <div class="my-post">
+        <div class="msg">
+          <div class="name">あなた</div>
+          <ul>
+            <li><span>メッセージが入ります</span></li>
+            <li><span>メッセージが入りますメッセージが<br>入ります</span></li>
+            <li><span>メッセージが入ります</span></li>
+          </ul>
+        </div>
+  
+        <figure>
+          <img src="assets/img/ico_user_red.svg" alt="">
+        </figure>
+      </div>
+  
+      <div class="user-post">
+        <figure>
+          <img src="assets/img/ico_user_blue.svg" alt="">
+        </figure>
+        <div class="msg">
+          <div class="name">株式会社テレワーク　田中様</div>
+          <ul>
+            <li><span>メッセージが入ります</span></li>
+            <li><span>メッセージが入りますメッセージが<br>入ります</span></li>
+            <li><span>メッセージが入ります</span></li>
+          </ul>
+        </div>
+  
+      </div>
+  
+      <div class="my-post">
+        <div class="msg">
+          <div class="name">あなた</div>
+          <ul>
+            <li><span>メッセージが入ります</span></li>
+            <li><span>メッセージが入りますメッセージが<br>入ります</span></li>
+            <li><span>メッセージが入ります</span></li>
+          </ul>
+        </div>
+  
+        <figure>
+          <img src="assets/img/ico_user_red.svg" alt="">
+        </figure>
+      </div>
+  
+      <div class="user-post">
+        <figure>
+          <img src="assets/img/ico_user_blue.svg" alt="">
+        </figure>
+        <div class="msg">
+          <div class="name">株式会社テレワーク　田中様</div>
+          <ul>
+            <li><span>メッセージが入ります</span></li>
+            <li><span>メッセージが入りますメッセージが<br>入ります</span></li>
+            <li><span>メッセージが入ります</span></li>
+          </ul>
+        </div>
+  
+      </div>
+  
+      <div class="my-post">
+        <div class="msg">
+          <div class="name">あなた</div>
+          <ul>
+            <li><span>メッセージが入ります</span></li>
+            <li><span>メッセージが入りますメッセージが<br>入ります</span></li>
+            <li><span>メッセージが入ります</span></li>
+          </ul>
+        </div>
+  
+        <figure>
+          <img src="assets/img/ico_user_red.svg" alt="">
+        </figure>
+      </div>
+  
+    </div>
+  
+    <div class="submit-area">
+      <div class="submit-area-form">
+        <input type="text" placeholder="参加者全員にメッセージを送信">
+        <button><i class="ico-airplane"></i></button>
+      </div>
+    </div>
+  </div>
+  <footer id="footer">
+    <nav>
+      <ul>
+        <li>
+          <i class="ico-camera-all"></i>
+          <div>全カメラ</div>
+        </li>
+        <li>
+          <i class="ico-mic-all"></i>
+          <div>全マイク</div>
+        </li>
+        <li>
+          <i class="ico-camera"></i>
+          <i class="ico-camera-off"></i>
+          <div>カメラ</div>
+        </li>
+        <li>
+          <i class="ico-mic"></i>
+          <i class="ico-mic-off"></i>
+          <div>マイク</div>
+        </li>
+        <li>
+          <i class="ico-display"></i>
+          <div>画面共有</div>
+        </li>
+        <li>
+          <i class="ico-Waiting"></i>
+          <div>ウェイティング</div>
+        </li>
+      </ul>
+      <div style="display: none;" class="sec act">
+        <div class="ell"><i class="ico-ell"></i></div>
+        <ul>
+          <li>
+            <i class="ico-chat"></i>
+            <div>チャット</div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="setting">
+      <li class="conf ico-setting" style="font-size: 58px;">
+      </li>
+      <li class="logout">
+        <i class="ico-logout"></i>終了する
+      </li>
+    </ul>
+  </footer>
+  <script>
+    function playVideo(e) {
+      if (e.className == 'play') {
+        return e.classList.remove('play')
+      }
+      $('.video-controls a').each(function(i, obj) {
+        $(`.video-controls a:nth-child(${i})`).removeClass('play')
+      });
+      return e.classList.add('play')
+    }
+  </script>
+  <script>
+    function myFunction() {
+      console.log("tat man hinh");
+  }
+  </script>
+</div>
+</body>
+</html>

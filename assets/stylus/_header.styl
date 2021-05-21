@@ -1,0 +1,95 @@
+#header
+	display flex
+	justify-content space-between
+	padding 22px
+	position relative
+	z-index 1
+	+sp()
+		padding 22px 15px
+		z-index 3
+	.logo
+		width 42px
+		height 27px
+		background url("../img/lg_vss.png") no-repeat left top
+		text-indent -9999px
+		overflow hidden
+		margin-bottom 5px
+
+	.info
+		display flex
+		border-radius 11px
+		background-color rgba(0,0,0,0.5)
+		padding 6px 20px 6px 15px
+		width 343px
+
+		+sp()
+			width auto
+
+		select
+			padding 5px 5px 5px 30px
+			color #ffffff
+			px(18)
+			background url("../img/ico_select_down.svg") no-repeat 8px center
+			+sp()
+				px(16)
+
+		dl
+			display flex
+			color #ffffff
+			background url("../img/ico_users.svg") no-repeat 15px center
+			padding 0 0 0 45px
+			position relative
+			margin-left 10px
+			align-items flex-end
+			+sp()
+				display none
+			&:before
+				content ""
+				display block
+				width 1px
+				height 24px
+				background-color #91959A
+				position absolute
+				left 0
+				top 50%
+				transform translate(0,-50%)
+			dt
+				px(19)
+				bold()
+			dd
+				px(14)
+				bold()
+				&:before
+					content "/"
+	.option
+		display  none
+		+sp()
+			display flex
+			align-items center
+			li
+				color #ffffff
+				margin-left 5px
+				&:last-child
+					color #D0D0D0
+				i
+					px(40)
+					line-height 0
+					display inline-block
+
+	&.login
+		height 77px
+		background-color #ffffff
+		padding 12px 20px
+		+sp()
+			height 53px
+			padding 12px
+		.logo
+			width 82px
+			height 53px
+			background url("../img/lg_vss_l.png") no-repeat left top
+			+sp()
+				background url("../img/lg_vss_l.png") no-repeat left top
+				background-size 42px 27px
+				width 42px
+				height 27px
+

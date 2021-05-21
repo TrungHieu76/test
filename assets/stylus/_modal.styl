@@ -1,0 +1,411 @@
+.modal-confcam
+	position absolute
+	left 0
+	right 0
+	top 0
+	bottom 0
+	z-index 30
+	display flex
+	justify-content center
+	align-items center
+	+sp()
+		left 15px
+		right 15px
+
+
+	.window
+		background-color #ffffff
+		padding 45px 110px
+		max-width 750px
+		width 100%
+		border-radius 14px
+		box-shadow 0 0 20px rgba(0,0,0,0.2)
+
+		+sp()
+			padding 15px
+			left 15px
+			right 15px
+			max-width none
+			width auto
+			top 100px
+
+		&.large
+			padding 45px 60px
+			+sp()
+				padding 15px
+		&.staff
+			padding 30px
+			margin-bottom 0
+
+		&.nopadding
+			padding 0
+			width 480px
+			+sp()
+				width auto
+
+		.btnClose
+			position absolute
+			right 30px
+			top 30px
+			+sp()
+				right 20px
+				top 20px
+		h2
+			px(24)
+			font-weight normal
+			text-align center
+			margin 0 0 20px 0
+			+sp()
+				px(20)
+		p
+			px(16)
+			padding-bottom 20px
+			text-align: center;
+
+		.video
+			max-width 410px
+			width 100%
+			height 255px
+			margin 0 auto
+			background-color #202020
+			margin-bottom 30px
+			img,
+			video
+				width 100%
+				height 100%
+				object-fit contain
+		.submitArea
+			text-align center
+			margin-bottom 30px
+			button
+				max-width 268px
+				width 100%
+				height 50px
+				border-radius 8px
+				background-color #ffffff
+				border none
+				border 1px solid #042663
+				color #042663
+				bold()
+				&:hover
+					background-color #042663
+					color #ffffff
+
+		.option
+			display flex
+			justify-content center
+			align-items center
+			margin-bottom 40px
+			px(14)
+			+sp()
+				display none
+
+			li
+				position relative
+				overflow hidden
+				margin 0 10px
+				+sp()
+					margin 0 5px
+
+				i
+					px(24)
+					line-height 0
+					display inline-block
+					vertical-align middle
+					margin-right 5px
+
+				input,span,img
+					display inline-block
+					vertical-align middle
+
+				button
+					height 28px
+					border-radius 2px
+					border 1px solid #DDDDDD
+					background-color #ffffff
+					px(12)
+					padding 0 20px
+
+			input
+				position absolute
+				top -50px
+			input + span
+				display inline-block
+				width 38px
+				height 20px
+				background-color #DDDDDD
+				border-radius 10px
+				position relative
+				transtion()
+
+				&:before
+					content ""
+					display block
+					width 18px
+					height 18px
+					background-color #ffffff
+					border-radius 50%
+					transtion()
+					position absolute
+					left 1px
+					top 1px
+
+			input:checked + span
+				background-color #68DF70
+				&:before
+					left 19px
+
+		.option2
+			display none
+			justify-content center
+			align-items center
+			margin-bottom 40px
+			px(14)
+			+sp()
+				display flex
+
+			li
+				position relative
+				overflow hidden
+				margin 0 10px
+				+sp()
+					margin 0 5px
+
+				i
+					px(24)
+					line-height 0
+					display inline-block
+					vertical-align middle
+
+				input,span,img
+					display inline-block
+					vertical-align middle
+
+				button
+					border-radius 20px
+					border 1px solid #3C3C3C
+					background-color #ffffff
+					px(11)
+					padding 0 20px
+					height 40px
+					i
+						px(30)
+						margin-right 10px
+
+
+			input
+				position absolute
+				top -50px
+			input + span
+				display flex
+				position relative
+				justify-content center
+				align-items center
+				transtion()
+				width 51px
+				height 51px
+				border 1px solid #3C3C3C
+				border-radius 50%
+				.ico-camera-off,
+				.ico-mic-off
+					display none
+				i
+					px(30)
+
+
+			input:checked + span
+				.ico-camera,
+				.ico-mic
+					display none
+				.ico-camera-off,
+				.ico-mic-off
+					display flex
+					color #DB4C4C
+
+.notes
+			px(14)
+			text-align center
+			+sp()
+				display none
+			i
+				display inline-block
+				px(24)
+				line-height 0
+				vertical-align middle
+
+////////////////////////
+.modal-exit
+	position absolute
+	left 0
+	right 0
+	top 0
+	bottom 0
+	z-index 30
+	display flex
+	justify-content center
+	align-items center
+	.window
+		background-color #ffffff
+		border-radius 14px
+		padding 70px 90px
+		max-width 674px
+		width 100%
+		box-shadow 0 0 20px rgba(0,0,0,0.2)
+		+sp()
+			position fixed
+			left 15px
+			right 15px
+			bottom 100px
+			padding 50px 35px
+			width auto
+
+		h2
+			px(24)
+			text-align center
+			margin-bottom 50px
+			+sp()
+				px(20)
+
+		p
+			text-align center
+			margin-bottom 55px
+
+		.btns
+			display flex
+			justify-content space-between
+			+sp()
+				flex-direction column-reverse
+			li
+				+sp()
+					text-align center
+					margin-bottom 15px
+				button
+					width 218px
+					height 65px
+					border-radius 8px
+					border none
+					px(18)
+					bold()
+					+sp()
+						height 48px
+						px(14)
+					&.cancel
+						color #707070
+						background-color #ffffff
+						border 1px solid #484848
+						&:hover
+							border 1px solid #484848
+							background-color #484848
+							color #ffffff
+					&.ok
+						color #ffffff
+						background-color #A94427
+						&:hover
+							background-color #EB5428
+//////////////////////////
+.modal-display-share
+	position absolute
+	left 0
+	right 0
+	top 0
+	bottom 0
+	z-index 30
+	display flex
+	justify-content center
+	align-items center
+
+	.window
+		background-color #ffffff
+		border-radius 5px
+		padding 25px
+		max-width 640px
+		width 100%
+		position fixed
+		left 0
+		right 0
+		top 0
+		margin auto
+		+sp()
+			bottom 0
+			border-radius 0
+
+		h2
+			px(18)
+			font-weight normal
+			margin-bottom 15px
+		.txt
+			+sp()
+				px(14)
+		.tab
+			display flex
+			justify-content space-between
+			border-bottom 1px solid #dddddd
+			li
+				text-align center
+				padding 10px 20px
+				position relative
+				+sp()
+					px(12)
+					padding 10px 5px
+				&.act
+					color #1A73E8
+					&:after
+						content ""
+						position absolute
+						left 0
+						bottom 0
+						display block
+						width 100%
+						height 3px
+						background-color #1A73E8
+
+	.display-share-scroll
+		border 1px solid #dddddd
+		height 340px
+		overflow auto
+		padding 15px
+		margin-bottom 25px
+		+sp()
+			height 50vh
+
+	.block
+		display flex
+		flex-wrap wrap
+
+		li
+			width calc(33.3% - 6px)
+			margin 0 3px 25px 3px
+			+sp()
+				width calc(50% - 6px)
+			figure
+				margin-bottom 5px
+				img
+					width 100%
+			.tit
+				px(14)
+				overflow hidden
+				text-overflow ellipsis
+				white-space nowrap
+				img
+					display inline-block
+					vertical-align middle
+					margin-right 3px
+					transform translate(0,-2px)
+
+	.btns
+		text-align right
+		li
+			display inline-block
+			button
+				width 95px
+				height 32px
+				border-radius 5px
+				border 1px solid #dddddd
+				background-color #ffffff
+			&:last-child
+				button
+					background-color #EAEAEA
+
+
+		li + li
+			margin-left 20px

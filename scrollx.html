@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://res.cloudinary.com/lenadi07/raw/upload/v1468859092/forCodePen/owlPlugin/owl.theme.css">
+    <link rel="stylesheet" href="https://res.cloudinary.com/lenadi07/raw/upload/v1468859078/forCodePen/owlPlugin/owl.carousel.css">
+</head>
+<body>
+   
+  <div class="device"> <!--all window-->
+    <div class="owl-carousel" id="owl-demo">
+
+      <div class="item" style="height: 400px;">
+        1
+      </div>
+      <div class="item">
+        2
+       </div>
+       <div class="item">
+        3
+      </div>
+      <div class="item">
+        4
+       </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="https://res.cloudinary.com/lenadi07/raw/upload/v1468858437/forCodePen/owlPlugin/owl.carousel.min.js"></script>
+  <script>
+      
+    $(document).ready(function () {
+
+var owl = $('.loop');
+
+owl.owlCarousel({
+  center: true,
+  nav: true,
+  items: 1,
+  loop: true,
+  margin: 10,
+  responsive: {
+    0: {
+      items: 1,
+      nav: true
+    },
+    600: {
+      items: 3,
+      nav: true,
+    }
+  },
+  URLhashListener: true,
+  autoplayHoverPause: true,
+  startPosition: 'URLHash'
+});
+
+owl.on('mousewheel', '.owl-stage', function (e) {
+  
+  if(e.originalEvent.wheelDelta > 0) {
+     owl.trigger('next.owl');
+  }
+  else{
+      owl.trigger('prev.owl');
+  }
+  e.preventDefault();
+});
+
+function init(){
+  $('.item').each(function(i){
+    $(this).append('<img src="http://lorempixel.com/400/200/?random='+i+'" />')});
+ 
+} 
+
+init();
+})
+
+
+  </script>
+</body>
+</html>
